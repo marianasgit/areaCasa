@@ -48,7 +48,7 @@ public class AreaCasa {
 			comprimentoComodo = leitor.nextInt();
 			
 			areaComodo = larguraComodo * comprimentoComodo;
-			areaCasa = areaComodo;
+			areaCasa = areaCasa + areaComodo;
 			
 			System.out.println("O cômodo " + nomeComodo + " tem " + areaComodo + " metros quadrados");
 			
@@ -56,8 +56,6 @@ public class AreaCasa {
 			
 			System.out.print("Você deseja calcular mais cômodos (S/N)? ");
 			resposta = leitor.next();
-			
-			areaCasa++;
 		}
 		
 		leitor.close();
