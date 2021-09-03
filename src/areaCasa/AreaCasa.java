@@ -8,9 +8,9 @@ public class AreaCasa {
 		
 		Scanner leitor = new Scanner(System.in);
 		
-		double larguraComodo, comprimentoComodo, areaComodo, areaCasa;
+		int larguraComodo, comprimentoComodo, areaComodo, areaCasa;
 		
-		String resposta, nomeComodo;
+		String resposta = "S", nomeComodo;
 		
 		System.out.println("---------------------------");
 		System.out.println("Calculo de área de uma casa");
@@ -21,19 +21,48 @@ public class AreaCasa {
 		nomeComodo = leitor.next();
 		
 		System.out.print("Qual a largura? ");
-		larguraComodo = leitor.nextDouble();
+		larguraComodo = leitor.nextInt();
 		
 		System.out.print("Qual o comprimento? ");
-		comprimentoComodo = leitor.nextDouble();
+		comprimentoComodo = leitor.nextInt();
 		
 		areaComodo = larguraComodo * comprimentoComodo;
+		areaCasa = areaComodo;
+		
+		System.out.println("O cômodo " + nomeComodo + " tem " + areaComodo + " metros quadrados");
 		
 		System.out.println();
 		
-		System.out.println("O cômodo " + nomeComodo + " tem " + areaComodo + " metros");
-		
 		System.out.print("Você deseja calcular mais cômodos (S/N)? ");
 		resposta = leitor.next();
+		
+		while (resposta.equals("S")){
+			
+			System.out.print("Qual o nome do cômodo? ");
+			nomeComodo = leitor.next();
+			
+			System.out.print("Qual a largura? ");
+			larguraComodo = leitor.nextInt();
+			
+			System.out.print("Qual o comprimento? ");
+			comprimentoComodo = leitor.nextInt();
+			
+			areaComodo = larguraComodo * comprimentoComodo;
+			areaCasa = areaComodo;
+			
+			System.out.println("O cômodo " + nomeComodo + " tem " + areaComodo + " metros quadrados");
+			
+			System.out.println();
+			
+			System.out.print("Você deseja calcular mais cômodos (S/N)? ");
+			resposta = leitor.next();
+			
+			areaCasa++;
+		}
+		
+		leitor.close();
+		
+		System.out.println("A área total da casa é " + areaCasa + " metros quadrados");
 	}
 
 }
