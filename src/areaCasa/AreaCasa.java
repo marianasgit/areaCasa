@@ -58,7 +58,10 @@ public class AreaCasa {
 			
 			System.out.print("Você deseja calcular mais cômodos (S/N)? ");
 			resposta = leitor.next();
+<<<<<<< HEAD
 			
+=======
+>>>>>>> 7030bbe2da2fd68b873ca1e749eef9fe6da7f3ae
 		}
 		
 		System.out.println();
