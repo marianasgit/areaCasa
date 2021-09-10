@@ -13,11 +13,11 @@ public class AreaCasa {
 		String resposta = "S", nomeComodo;
 		
 		System.out.println("---------------------------");
-		System.out.println("Calculo de área de uma casa");
+		System.out.println("Calculo de Ã¡rea de uma casa");
 		System.out.println("---------------------------");
 		System.out.println();
 		
-		System.out.print("Qual o nome do cômodo? ");
+		System.out.print("Qual o nome do cÃ´modo? ");
 		nomeComodo = leitor.next();
 		
 		System.out.print("Qual a largura? ");
@@ -29,18 +29,18 @@ public class AreaCasa {
 		areaComodo = larguraComodo * comprimentoComodo;
 		areaCasa = areaComodo;
 		
-		System.out.println("O cômodo " + nomeComodo + " tem " + areaComodo + " metros quadrados");
+		System.out.println("O cÃ´modo " + nomeComodo + " tem " + areaComodo + " metros quadrados");
 		
 		System.out.println();
 		
-		System.out.print("Você deseja calcular mais cômodos (S/N)? ");
+		System.out.print("VocÃª deseja calcular mais cÃ´modos (S/N)? ");
 		resposta = leitor.next();
 		
 		System.out.println();
 		
 		while (resposta.equals("S")){
 			
-			System.out.print("Qual o nome do cômodo? ");
+			System.out.print("Qual o nome do cÃ´modo? ");
 			nomeComodo = leitor.next();
 			
 			System.out.print("Qual a largura? ");
@@ -52,23 +52,19 @@ public class AreaCasa {
 			areaComodo = larguraComodo * comprimentoComodo;
 			areaCasa = areaCasa + areaComodo;
 			
-			System.out.println("O cômodo " + nomeComodo + " tem " + areaComodo + " metros quadrados");
+			System.out.println("O cÃ´modo " + nomeComodo + " tem " + areaComodo + " metros quadrados");
 			
 			System.out.println();
 			
-			System.out.print("Você deseja calcular mais cômodos (S/N)? ");
+			System.out.print("VocÃª deseja calcular mais cÃ´modos (S/N)? ");
 			resposta = leitor.next();
-<<<<<<< HEAD
-			
-=======
->>>>>>> 7030bbe2da2fd68b873ca1e749eef9fe6da7f3ae
 		}
 		
 		System.out.println();
 		
 		leitor.close();
 		
-		System.out.println("A área total da casa é " + areaCasa + " metros quadrados");
+		System.out.println("A Ã¡rea total da casa Ã© " + areaCasa + " metros quadrados");
 		
 		System.out.println();
 		
